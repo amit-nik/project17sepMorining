@@ -19,6 +19,9 @@ public class TestBase {
 		driver.get(ReadData.readPropertyFile("Url"));
 		driver.manage().deleteAllCookies();
 //		driver.get("https://www.saucedemo.com/");
+		
+		
+		//pull the code in machine
 	}
 
 }
