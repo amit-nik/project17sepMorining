@@ -1,5 +1,6 @@
 package Base;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,6 +17,7 @@ public class TestBase {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(ReadData.readPropertyFile("Url"));
+		driver.manage().deleteAllCookies();
 //		driver.get("https://www.saucedemo.com/");
 	}
 
